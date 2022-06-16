@@ -3,7 +3,7 @@ const row = document.getElementById('row');
 // creo ciclo che va da 1 a 100
 for(let i=1; i<=100; i++){
     const colToAppend = document.createElement('div');
-    colToAppend.classList.add('col-2','height','fs-2','fw-bold','pt-4','me-3');
+    colToAppend.classList.add('col','height','fs-2','fw-bold','pt-4','me-3');
     // controllo che sia divisibile per 3 e 5
     if(((i%3)==0) && ((i%5)==0))
     {
