@@ -2,6 +2,7 @@ const row = document.getElementById('row');
 const btn = document.getElementById('btn');
 btn.addEventListener('click', function () {
     const userNumber = parseInt(document.getElementById('number').value);
+    document.getElementById('row').innerHTML='';
     if (isNaN(userNumber) == true) {
         document.getElementById('wrong').classList.remove('d-none');
     }
