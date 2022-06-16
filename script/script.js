@@ -3,7 +3,7 @@ const btn = document.getElementById('btn');
 btn.addEventListener('click', function () {
     const userNumber = parseInt(document.getElementById('number').value);
     document.getElementById('row').innerHTML='';
-    if (isNaN(userNumber) == true) {
+    if (isNaN(userNumber) == true || userNumber <= 0) {
         document.getElementById('wrong').classList.remove('d-none');
     }
     else {
